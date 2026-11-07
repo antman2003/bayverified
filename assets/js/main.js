@@ -13,7 +13,7 @@
   const emptyText=empty.textContent;
   const WHOLE='湾区';
   // Area hierarchy: child -> parent. Matching is two-way (parent selection matches child records and vice versa).
-  const PARENT={'Sunnyvale':'南湾','San Jose':'南湾','中半岛':'半岛','Dublin':'东湾','Union City':'东湾','Fremont':'东湾'};
+  const PARENT={'Sunnyvale':'南湾','San Jose':'南湾','Santa Clara':'南湾','中半岛':'半岛','Dublin':'东湾','Union City':'东湾','Fremont':'东湾'};
   // Old fine-grained trade values (bookmarked URLs) -> major category.
   const TRADE_ALIAS={'全屋装修':'装修','室内装修':'装修','加建':'装修','新建':'装修','盖房子':'装修','水电':'电工','水管':'水管 / 下水道','下水道':'水管 / 下水道','地板':'地板 / 楼梯 / 木工','楼梯':'地板 / 楼梯 / 木工','木工':'地板 / 楼梯 / 木工'};
   const areaMatch=(sel,rec)=>!sel||rec===WHOLE||sel===WHOLE||sel===rec||PARENT[rec]===sel||PARENT[sel]===rec;
