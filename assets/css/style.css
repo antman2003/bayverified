@@ -13,3 +13,8 @@
 .tab-list.two{grid-template-columns:repeat(2,1fr)}
 .portfolio{border:1px solid var(--border);border-radius:var(--radius);padding:19px 20px;margin-top:20px}.portfolio h2{font-size:1.22rem;margin-bottom:10px}.portfolio-bio{margin:0 0 10px}.portfolio-avatar{width:72px;height:72px;object-fit:cover;border-radius:50%;margin-bottom:10px}.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:12px}.portfolio-grid img{width:100%;border-radius:8px;display:block}.portfolio-grid figcaption{font-size:.8rem;color:var(--text-2);margin-top:4px}
 @media (max-width:540px){.pending-tag{font-size:.75rem;padding:3px 8px}.pending-explain{padding:15px}}
+
+/* v1.4 transparency: dispute + log */
+.dispute-tag{display:inline-flex;align-items:center;flex:0 0 auto;background:#fff;border:1px solid #8795A0;border-radius:999px;color:#55636D;font-size:.8rem;font-weight:700;padding:4px 10px;white-space:nowrap}
+.dispute-notice{border:1px solid var(--border);border-radius:var(--radius);padding:19px 20px;margin-top:20px}.dispute-notice h2{font-size:1.22rem;margin-bottom:10px}
+.log-entry{border-top:1px solid var(--border);padding-top:16px;margin-top:16px}.log-entry h3{font-size:1rem;margin-bottom:6px}

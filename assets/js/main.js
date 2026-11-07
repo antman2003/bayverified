@@ -1,4 +1,4 @@
-/* BayVerified v1.2 — vanilla JS only. TODO: the real feedback form URL is still to be filled in (feedback.html CTA is disabled until then). */
+/* BayVerified v1.2 — vanilla JS only. */
 (()=>{'use strict';
  const menu=document.querySelector('.menu-toggle');const nav=document.getElementById('primary-nav');
  if(menu&&nav){
