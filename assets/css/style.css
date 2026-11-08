@@ -22,3 +22,14 @@
 /* v1.5 directory search */
 .directory-filter input[type="search"],.search-form input[type="search"]{height:56px;width:100%;border:1px solid var(--border);border-radius:var(--radius);background:#fff;color:var(--text);padding:0 17px;font-weight:600}
 .directory-filter input[type="search"]{grid-column:1/-1}
+
+/* v1.6 portfolio pilot (feng-shifu, 2026-11-07) */
+.portfolio-project{margin-top:16px}.portfolio-project h3{font-size:1rem;margin-bottom:10px}
+.portfolio-disclaimer{font-size:.85rem;color:var(--text-2);margin:0 0 4px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.portfolio-grid figure{margin:0;min-width:0}
+.portfolio-grid a{display:block;min-width:0}
+.portfolio-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block;min-width:0}
+.portfolio-grid figcaption{font-size:.8rem;color:var(--text-2);margin-top:4px}
+@media (min-width:768px){.portfolio-grid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1200px){.portfolio-grid{grid-template-columns:repeat(4,1fr)}}
