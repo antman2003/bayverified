@@ -33,3 +33,7 @@
 .portfolio-grid figcaption{font-size:.8rem;color:var(--text-2);margin-top:4px}
 @media (min-width:768px){.portfolio-grid{grid-template-columns:repeat(3,1fr)}}
 @media (min-width:1200px){.portfolio-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* v1.8 published feedback (fei-ge, 2026-11-08) */
+.feedback-item{padding:25px;background:var(--subtle);border:1px solid var(--border);border-radius:var(--radius)}
+.feedback-item .feedback-text{margin-bottom:8px}
