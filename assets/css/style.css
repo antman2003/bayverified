@@ -6,6 +6,11 @@
 @media (max-width:360px){.brand-sep{display:none}.brand-sub{font-size:.62rem;padding:3px 6px}.brand-line{gap:6px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
+/* external reviews links (Breathable, Handy Plumbing Man, Marcelo — 2026-11-09) */
+.external-reviews{margin:22px 0 4px}
+.external-reviews h2{margin-bottom:8px;font-size:1.22rem}
+.external-links{display:flex;flex-wrap:wrap;gap:11px;margin-top:12px}
+
 /* v1.3 expansion: pending tier */
 .pending-tag{display:inline-flex;align-items:center;flex:0 0 auto;background:#fff;border:1px solid #8795A0;border-radius:999px;color:#55636D;font-size:.8rem;font-weight:700;padding:4px 10px;white-space:nowrap}
 .group-list{display:block}.card-group+.card-group{margin-top:34px}.card-group[hidden]{display:none}.group-heading{font-size:1.1rem;margin:0 0 14px;color:var(--text)}
