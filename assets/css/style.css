@@ -43,3 +43,6 @@
 /* v1.8 published feedback (fei-ge, 2026-11-08) */
 .feedback-item{padding:25px;background:var(--subtle);border:1px solid var(--border);border-radius:var(--radius)}
 .feedback-item .feedback-text{margin-bottom:8px}
+
+/* v1.9 contact email (feedback, 2026-11-13) */
+.feedback-email{margin:16px 0 0;text-align:center}
