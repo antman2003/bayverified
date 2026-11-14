@@ -1,4 +1,42 @@
 User-agent: *
 Allow: /
 
+# OpenAI: Search allowed, training disallowed
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic: Search allowed, training disallowed
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity: Search allowed
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google: Search allowed, additional AI usage restricted
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://bayverified.com/sitemap.xml
