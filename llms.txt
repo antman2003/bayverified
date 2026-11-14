@@ -24,7 +24,7 @@ BayVerified covers the San Francisco Bay Area. It is a directory and a verificat
 - Verification status is specific to the evidence documented on each profile.
 - Pending listings have not completed the platform's verification process.
 - Information may change. Always consult the current profile for the latest status, evidence, and contact details.
-- As of 2026-11-14, the directory lists 85 contractors: 15 verified and 70 pending.
+- As of 2026-11-14, the directory lists 85 contractors: 16 verified and 69 pending.
 
 ## Official Resources
 
