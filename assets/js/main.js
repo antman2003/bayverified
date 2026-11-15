@@ -11,12 +11,12 @@
  if(form){
   const trade=form.querySelector('[name="trade"]'),area=form.querySelector('[name="area"]'),q=form.querySelector('[name="q"]'),cards=[...document.querySelectorAll('[data-contractor-card]')],count=document.getElementById('result-count'),empty=document.getElementById('empty-results');
   const emptyText=empty.textContent;
-  const WHOLE='湾区';
+  const WHOLE='湾区';const isWhole=a=>a===WHOLE||a==='全湾区';
   // Area hierarchy: child -> parent. Matching is two-way (parent selection matches child records and vice versa).
   const PARENT={'Sunnyvale':'南湾','San Jose':'南湾','Santa Clara':'南湾','中半岛':'半岛','Dublin':'东湾','Union City':'东湾','Fremont':'东湾'};
   // Old fine-grained trade values (bookmarked URLs) -> major category.
   const TRADE_ALIAS={'全屋装修':'装修','室内装修':'装修','加建':'装修','新建':'装修','盖房子':'装修','水电':'电工','水管':'水管 / 下水道','下水道':'水管 / 下水道','地板':'地板 / 楼梯 / 木工','楼梯':'地板 / 楼梯 / 木工','木工':'地板 / 楼梯 / 木工'};
-  const areaMatch=(sel,rec)=>!sel||rec===WHOLE||sel===WHOLE||sel===rec||PARENT[rec]===sel||PARENT[sel]===rec;
+  const areaMatch=(sel,rec)=>!sel||isWhole(rec)||isWhole(sel)||sel===rec||PARENT[rec]===sel||PARENT[sel]===rec;
   const params=new URLSearchParams(location.search);
   const setSelected=(el,val)=>{if([...el.options].some(o=>o.value===val))el.value=val};
   setSelected(trade,TRADE_ALIAS[params.get('trade')]||params.get('trade')||'');
@@ -30,7 +30,7 @@
    const qMatch=c=>!qv||(!phoneLike&&fold(c.textContent||'').toLowerCase().includes(qv.toLowerCase()))||(qd.length>0&&(c.dataset.phone||'').split(' ').some(p=>p.includes(qd)));
    let shown=cards.filter(c=>{const [ts,as]=parts(c);return(!trade.value||ts.includes(trade.value))&&(!area.value||as.some(a=>areaMatch(area.value,a)))&&qMatch(c)});
    let fallback=false;
-   if(!shown.length&&!qv){shown=cards.filter(c=>parts(c)[1].includes(WHOLE));fallback=shown.length>0}
+   if(!shown.length&&!qv){shown=cards.filter(c=>parts(c)[1].some(a=>isWhole(a)));fallback=shown.length>0}
    cards.forEach(c=>{c.hidden=!shown.includes(c)});
    document.querySelectorAll('[data-group]').forEach(g=>{const n=g.querySelectorAll('[data-contractor-card]:not([hidden])').length;g.hidden=n===0;const s=g.querySelector('[data-group-count]');if(s)s.textContent=n});
    if(fallback){count.textContent=`没有完全符合的师傅 · 以下 ${shown.length} 位为全湾区服务的师傅`;empty.textContent='以下师傅服务全湾区，工种不一定与所选相同，请查看详情确认。';empty.hidden=false}
