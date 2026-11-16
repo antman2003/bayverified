@@ -34,3 +34,6 @@ BayVerified covers the San Francisco Bay Area. It is a directory and a verificat
 - Independence Policy: https://bayverified.com/independence.html
 - Terms of Use: https://bayverified.com/terms.html
 - Feedback: https://bayverified.com/feedback.html
+- Renovation Guides (hub): https://bayverified.com/guides/
+- Guide: https://bayverified.com/guides/gc-checklist/
+- Guide: https://bayverified.com/guides/gc-full-guide/
