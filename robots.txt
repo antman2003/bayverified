@@ -39,4 +39,21 @@ Disallow: /
 User-agent: Bingbot
 Allow: /
 
+# Training crawlers: search and link previews stay allowed (User-agent: *); training harvest disallowed below.
+# Apple: search (Applebot) stays allowed, Apple Intelligence training disallowed
+User-agent: Applebot-Extended
+Disallow: /
+
+# Common Crawl: training-data harvest disallowed
+User-agent: CCBot
+Disallow: /
+
+# ByteDance: training crawler disallowed
+User-agent: Bytespider
+Disallow: /
+
+# Meta: AI training crawler disallowed (facebookexternalhit link previews stay allowed)
+User-agent: meta-externalagent
+Disallow: /
+
 Sitemap: https://bayverified.com/sitemap.xml
