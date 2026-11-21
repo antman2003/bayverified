@@ -37,3 +37,4 @@ BayVerified covers the San Francisco Bay Area. It is a directory and a verificat
 - Renovation Guides (hub): https://bayverified.com/guides/
 - Guide: https://bayverified.com/guides/gc-checklist/
 - Guide: https://bayverified.com/guides/gc-full-guide/
+- Guide: https://bayverified.com/guides/cslb-license-check/
